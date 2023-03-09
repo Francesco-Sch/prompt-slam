@@ -1,20 +1,16 @@
-# create-svelte
+# Prompt Battle ‒ Interface for prompting with Dall-E
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## 📝 Colophon
 
-## Creating a project
+- Fonts in use:
+  - [Redaction](https://www.redaction.us/) by [Jeremy Mickel](https://mckltype.com/)
+  - [Roboto](https://fonts.google.com/specimen/Roboto) by [Christian Robertson](http://christianrobertson.com/)
+- Technology:
+  - Built with [SvelteKit](https://kit.svelte.dev/)
+  - Made beautiful with [Tailwind CSS](https://tailwindcss.com/)
+  - Uses the [Open AI API](https://platform.openai.com/) to talk to [DALL·E 2](https://openai.com/product/dall-e-2)
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
+## 🚧 Development
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
@@ -25,7 +21,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+## 🏗️ Build for production
 
 To create a production version of your app:
 
