@@ -2,6 +2,6 @@
 	<p class="font-sans">Enter your username:</p>
 	<input
 		type="text"
-		class="border-lime-400 border-0 border-b-2 w-full focus:ring-0 focus:border-prompt-orange"
+		class="border-lime-400 w-full border-0 border-b-2 focus:border-prompt-orange focus:ring-0"
 	/>
 </div>
