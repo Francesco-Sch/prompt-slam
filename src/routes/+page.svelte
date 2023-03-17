@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ThemeSwitch from '$lib/components/ThemeSwitch.svelte';
 	import ActionBar from '$lib/layout/ActionBar.svelte';
 </script>
 
