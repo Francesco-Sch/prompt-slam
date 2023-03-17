@@ -3,12 +3,13 @@
 	"singleQuote": true,
 	"trailingComma": "none",
 	"printWidth": 80,
-	"plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+	"bracketSpacing": true,
 	"pluginSearchDirs": ["."],
 	"overrides": [
 		{
 			"files": "*.svelte",
 			"options": { "parser": "svelte" }
 		}
-	]
+	],
+	"tailwindConfig": "./tailwind.config.cjs"
 }
