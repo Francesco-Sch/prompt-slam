@@ -2,14 +2,6 @@
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		colors: {
-			'prompt-orange': {
-				DEFAULT: '#FA8334'
-			},
-			'prompt-blue': {
-				DEFAULT: '#388697'
-			}
-		},
 		fontFamily: {
 			redaction: ['Redaction', 'system-ui', 'serif'],
 			'redaction-10': ['"Redaction 10"', 'system-ui', 'serif'],
@@ -22,6 +14,14 @@ module.exports = {
 		extend: {
 			animation: {
 				'unpixelate-font': 'unpixelate-font-50-0 1s ease-in-out alternate'
+			},
+			colors: {
+				'prompt-orange': {
+					DEFAULT: '#FA8334'
+				},
+				'prompt-blue': {
+					DEFAULT: '#388697'
+				}
 			},
 			keyframes: {
 				'unpixelate-font-50-0': {
