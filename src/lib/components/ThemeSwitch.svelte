@@ -28,6 +28,6 @@
 	}
 	.gradient-orange-to-blue,
 	.gradient-blue-to-orange {
-		@apply h-8 w-8 rounded-full bg-gradient-to-br;
+		@apply h-8 w-8 rounded-full border border-slate-900 bg-gradient-to-br;
 	}
 </style>

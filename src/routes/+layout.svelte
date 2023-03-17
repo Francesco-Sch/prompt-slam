@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Header from '$lib/layout/Header.svelte';
 	import '../styles/app.css';
 </script>
