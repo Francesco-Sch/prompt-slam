@@ -2,6 +2,7 @@
 	import { theme } from '$lib/store';
 	import ThemeSwitch from '$lib/components/ThemeSwitch.svelte';
 	import ActionBar from '$lib/layout/ActionBar.svelte';
+	import Button from '$lib/components/Button.svelte';
 </script>
 
 <div class="flex h-full flex-col">
@@ -22,6 +23,8 @@
 		<div class="my-4 ml-4">
 			<ThemeSwitch />
 		</div>
-		<p>Hello</p>
+		<div class="ml-auto">
+			<Button label="Start the battle" />
+		</div>
 	</ActionBar>
 </div>
