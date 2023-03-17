@@ -22,7 +22,7 @@
 		"eslint-plugin-svelte3": "^4.0.0",
 		"postcss": "^8.4.21",
 		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.8.1",
+		"prettier-plugin-tailwindcss": "^0.2.4",
 		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",
 		"tailwindcss": "^3.2.7",
@@ -30,5 +30,8 @@
 		"typescript": "^4.9.3",
 		"vite": "^4.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"prettier-plugin-svelte": "^2.9.0"
+	}
 }
