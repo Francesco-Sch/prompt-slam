@@ -3,7 +3,7 @@
 	import ActionBar from '$lib/layout/ActionBar.svelte';
 </script>
 
-<div class="flex flex-col">
+<div class="flex h-full flex-col">
 	<form class="mx-6 my-auto">
 		<label class="font-sans" for="user-name">Enter your username:</label>
 		<input
@@ -14,6 +14,9 @@
 	</form>
 
 	<ActionBar>
+		<div class="my-4 ml-4">
+			<ThemeSwitch />
+		</div>
 		<p>Hello</p>
 	</ActionBar>
 </div>
