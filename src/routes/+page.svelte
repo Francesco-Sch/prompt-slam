@@ -24,7 +24,7 @@
 			<ThemeSwitch />
 		</div>
 		<div class="ml-auto">
-			<Button label="Start the battle" />
+			<Button label="Start the battle" href="/prompt" />
 		</div>
 	</ActionBar>
 </div>
