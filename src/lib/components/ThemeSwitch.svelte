@@ -1,3 +1,7 @@
+<!-- 
+	Thanks to Nico Bachner for this solution:
+	https://nicobachner.com/sveltekit-theme-switch
+ -->
 <script lang="ts">
 	import { theme } from '$lib/store';
 </script>
