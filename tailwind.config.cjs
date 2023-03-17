@@ -13,7 +13,8 @@ module.exports = {
 		},
 		extend: {
 			animation: {
-				'unpixelate-font': 'unpixelate-font-50-0 1s ease-in-out alternate'
+				'unpixelate-font':
+					'unpixelate-font-50-0 1s ease-in-out alternate forwards'
 			},
 			colors: {
 				'prompt-orange': {
