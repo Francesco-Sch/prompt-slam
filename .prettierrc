@@ -10,6 +10,5 @@
 			"files": "*.svelte",
 			"options": { "parser": "svelte" }
 		}
-	],
-	"tailwindConfig": "./tailwind.config.cjs"
+	]
 }
