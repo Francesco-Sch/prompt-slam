@@ -1,40 +1,48 @@
 <script lang="ts">
-	import { username, theme } from '$lib/store';
-	import type { ActionData } from './$types';
+	import { username } from '$lib/store';
 	import { enhance, type SubmitFunction } from '$app/forms';
 	import ActionBar from '$lib/layout/ActionBar.svelte';
 	import Button from '$lib/components/Button.svelte';
 
 	let loading = false;
+	let url: string;
 
 	const handleSubmit: SubmitFunction = () => {
 		loading = true;
 
 		return async ({ action, result }) => {
-			let resultObject = JSON.parse(JSON.stringify(result));
+			let response = JSON.parse(JSON.stringify(result));
 
-			console.log(resultObject);
+			if (response.status == 200) {
+				url = response.data.url;
+
+				loading = false;
+			} else {
+				loading = false;
+				alert('An error occurred, please try again.');
+			}
 		};
 	};
-
-	export let form: ActionData;
 </script>
 
 <div class="flex h-full flex-col">
-	<form method="POST" use:enhance class="mx-6 mb-6 mt-14 h-full">
+	<form
+		id="promptForm"
+		method="POST"
+		use:enhance={handleSubmit}
+		class="mx-6 mb-6 mt-14 h-full"
+	>
 		<label for="prompt">
 			<textarea name="prompt" class="prompt-input" />
 		</label>
 	</form>
 
-	{#if form?.success}{/if}
-
 	<ActionBar>
 		<div class="my-4 ml-4">
-			<p>{$username}</p>
+			<p class="text-lg">{$username}</p>
 		</div>
 		<div class="ml-auto">
-			<Button label="Generate the image" />
+			<Button label="Generate the image" type="submit" form="promptForm" />
 		</div>
 	</ActionBar>
 </div>
