@@ -41,6 +41,6 @@
 
 <style lang="postcss">
 	.prompt-input {
-		@apply h-full w-full;
+		@apply h-full w-full font-redaction text-8xl focus:outline-none focus:ring-0;
 	}
 </style>
