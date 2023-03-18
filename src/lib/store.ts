@@ -4,6 +4,7 @@ import { writable } from 'svelte/store';
 const username = writable('');
 
 // Behaviour
+const colorizedBackground = writable(false);
 const theme = writable('orange');
 
-export { username, theme };
+export { username, colorizedBackground, theme };

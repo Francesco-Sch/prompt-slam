@@ -1,8 +1,10 @@
 <script lang="ts">
-	import { username } from '$lib/store';
+	import { username, colorizedBackground } from '$lib/store';
 	import { enhance, type SubmitFunction } from '$app/forms';
 	import ActionBar from '$lib/layout/ActionBar.svelte';
 	import Button from '$lib/components/Button.svelte';
+
+	$colorizedBackground = true;
 
 	let loading = false;
 	let url: string;
@@ -17,6 +19,8 @@
 				url = response.data.url;
 
 				loading = false;
+
+				console.log(url);
 			} else {
 				loading = false;
 				alert('An error occurred, please try again.');
@@ -49,6 +53,6 @@
 
 <style lang="postcss">
 	.prompt-input {
-		@apply h-full w-full font-redaction text-8xl focus:outline-none focus:ring-0;
+		@apply h-full w-full bg-transparent font-redaction text-8xl focus:outline-none focus:ring-0;
 	}
 </style>
