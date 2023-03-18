@@ -10,7 +10,7 @@
 	<a {href}>
 		<button
 			on:click
-			class="h-full px-20 font-redaction-50 text-xl hover:animate-unpixelate-font
+			class="h-full px-20 py-7 font-redaction-50 text-xl hover:animate-unpixelate-font
           {$theme === 'orange' ? 'bg-prompt-orange' : 'bg-prompt-blue'}"
 		>
 			{label}
@@ -19,7 +19,7 @@
 {:else}
 	<button
 		on:click
-		class="h-full px-20 font-redaction-50 text-xl hover:animate-unpixelate-font
+		class="h-full px-20 py-7 font-redaction-50 text-xl hover:animate-unpixelate-font
           {$theme === 'orange' ? 'bg-prompt-orange' : 'bg-prompt-blue'}"
 	>
 		{label}
