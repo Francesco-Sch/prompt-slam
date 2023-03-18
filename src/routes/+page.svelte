@@ -13,7 +13,7 @@
 				bind:value={$username}
 				name="user-name"
 				type="text"
-				class="mt-5 w-full border-0 border-b border-slate-900 font-redaction text-8xl focus:outline-none focus:ring-0
+				class="mt-5 w-full border-0 border-b border-slate-900 font-redaction text-8xl text-slate-900 focus:outline-none focus:ring-0
 				{$theme === 'orange'
 					? 'focus:border-b-prompt-orange'
 					: 'focus:border-b-prompt-blue'}

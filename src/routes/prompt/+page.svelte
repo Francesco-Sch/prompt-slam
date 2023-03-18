@@ -43,7 +43,7 @@
 
 	<ActionBar>
 		<div class="my-4 ml-4">
-			<p class="text-lg">{$username}</p>
+			<p class="text-lg text-slate-900">{$username}</p>
 		</div>
 		<div class="ml-auto">
 			<Button label="Generate the image" type="submit" form="promptForm" />
@@ -53,6 +53,6 @@
 
 <style lang="postcss">
 	.prompt-input {
-		@apply h-full w-full bg-transparent font-redaction text-8xl focus:outline-none focus:ring-0;
+		@apply h-full w-full bg-transparent font-redaction text-8xl text-slate-900 focus:outline-none focus:ring-0;
 	}
 </style>

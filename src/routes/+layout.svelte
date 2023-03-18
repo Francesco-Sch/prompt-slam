@@ -15,7 +15,7 @@
 		class="h-screen"
 		class:bg-prompt-orange={$theme === 'orange' &&
 			$colorizedBackground === true}
-		class:bg-prompt-blue={$theme === 'orange' && $colorizedBackground === true}
+		class:bg-prompt-blue={$theme === 'blue' && $colorizedBackground === true}
 	>
 		<slot />
 	</main>
