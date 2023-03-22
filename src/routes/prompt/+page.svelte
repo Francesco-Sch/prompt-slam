@@ -34,7 +34,7 @@
 			setTimeout(() => {
 				loading = false;
 				url = 'cool';
-			}, 2000);
+			}, 1000);
 		};
 	};
 </script>
@@ -93,7 +93,12 @@
 	{#if !loading && url != undefined}
 		<div in:slide={{ duration: 1000, easing: quintOut }}>
 			<ActionBar>
-				<Button label="Start a new game" type="submit" form="promptForm" />
+				<Button
+					label="Start a new game"
+					type="button"
+					href="/"
+					class="w-full"
+				/>
 			</ActionBar>
 		</div>
 	{/if}
