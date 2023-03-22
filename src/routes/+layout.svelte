@@ -20,3 +20,5 @@
 		<slot />
 	</main>
 </PageTransition>
+
+<style lang="postcss"></style>
