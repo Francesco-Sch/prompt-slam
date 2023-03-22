@@ -1,9 +1,10 @@
 import { writable } from 'svelte/store';
 
 // Data
-const username = writable('');
+const user = writable('');
 
 // Behaviour
+const colorizedBackground = writable(false);
 const theme = writable('orange');
 
-export { username, theme };
+export { user, colorizedBackground, theme };

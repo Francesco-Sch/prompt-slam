@@ -32,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"openai": "^3.2.1",
 		"prettier-plugin-svelte": "^2.9.0"
 	}
 }
