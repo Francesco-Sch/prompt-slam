@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { username, theme } from '$lib/store';
+	import { user, theme } from '$lib/store';
 	import ThemeSwitch from '$lib/components/ThemeSwitch.svelte';
 	import ActionBar from '$lib/layout/ActionBar.svelte';
 	import Button from '$lib/components/Button.svelte';
@@ -10,7 +10,7 @@
 		<label class="font-sans" for="user-name">
 			Enter your username:
 			<input
-				bind:value={$username}
+				bind:value={$user}
 				name="user-name"
 				type="text"
 				class="mt-5 w-full border-0 border-b border-slate-900 font-redaction text-8xl text-slate-900 focus:outline-none focus:ring-0
