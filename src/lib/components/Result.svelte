@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class="grid max-w-screen-80 auto-rows-auto grid-cols-2 gap-10 rounded-xl p-8"
+	class="grid max-w-screen-80 auto-rows-auto grid-cols-2 gap-10 rounded-xl p-4 md:p-6 lg:p-8"
 	class:bg-prompt-orange={$theme === 'orange' && $colorizedBackground === false}
 	class:bg-prompt-blue={$theme === 'blue' && $colorizedBackground === false}
 	class:bg-slate-900={$colorizedBackground === true}
