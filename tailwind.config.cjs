@@ -32,6 +32,13 @@ module.exports = {
 					'70%': { 'font-family': '"Redaction 10", "system-ui", "serif"' },
 					'100%': { 'font-family': '"Redaction", "system-ui", "serif"' }
 				}
+			},
+			maxWidth: {
+				'screen-20': '20vw',
+				'screen-40': '40vw',
+				'screen-60': '60vw',
+				'screen-80': '80vw',
+				'screen-full': '100vw'
 			}
 		}
 	},
