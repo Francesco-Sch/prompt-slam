@@ -9,14 +9,20 @@
 	// This makes sure, that the text on the right side is never bigger than
 	// the image on the left
 	let imageElement: HTMLImageElement;
-	let height = 0;
+	let textContainerHeight = 0;
+	let windowWidth: any;
 
-	function handleImageLoad() {
-		height = imageElement.offsetHeight * 0.8;
+	function setTextContainerHeight() {
+		textContainerHeight = imageElement.offsetHeight * 0.8;
+	}
+
+	$: if (windowWidth) {
+		setTextContainerHeight();
+		console.log('windowWidth changed.');
 	}
 </script>
 
-<!--  -->
+<svelte:window bind:innerWidth={windowWidth} />
 
 <div
 	class="grid max-h-screen-60 max-w-screen-80 grid-cols-2 gap-10 rounded-xl p-4 md:p-6 lg:p-8"
@@ -28,14 +34,14 @@
 	<img
 		src={image}
 		alt="The generated result"
-		on:load={handleImageLoad}
+		on:load={setTextContainerHeight}
 		bind:this={imageElement}
 	/>
 
 	<div class="flex h-full flex-col">
 		<p
 			class="mb-5 overflow-y-auto font-redaction text-5xl"
-			style="height: {height}px"
+			style="height: {textContainerHeight}px"
 		>
 			{prompt}
 		</p>
