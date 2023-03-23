@@ -1,28 +1,15 @@
 <script lang="ts">
 	import { theme, colorizedBackground } from '$lib/store';
+	import Image from './Image.svelte';
 
 	export let image: string;
 	export let prompt: string;
 	export let user: string | undefined = undefined;
 
-	// Compute height of prompt container.
-	// This makes sure, that the text on the right side is never bigger than
-	// the image on the left
-	let imageElement: HTMLImageElement;
-	let textContainerHeight = 0;
-	let windowWidth: any;
-
-	function setTextContainerHeight() {
-		textContainerHeight = imageElement.offsetHeight * 0.8;
-	}
-
-	$: if (windowWidth) {
-		setTextContainerHeight();
-		console.log('windowWidth changed.');
-	}
+	// ImageHeight is used to compute height of textContainerHeight
+	let imageHeight: any;
+	$: textContainerHeight = imageHeight * 0.8;
 </script>
-
-<svelte:window bind:innerWidth={windowWidth} />
 
 <div
 	class="grid max-h-screen-60 max-w-screen-80 grid-cols-2 gap-10 rounded-xl p-4 md:p-6 lg:p-8"
@@ -31,11 +18,10 @@
 	class:bg-slate-900={$colorizedBackground === true}
 	class:text-white={$colorizedBackground === true}
 >
-	<img
+	<Image
 		src={image}
-		alt="The generated result"
-		on:load={setTextContainerHeight}
-		bind:this={imageElement}
+		alt="The AI generated result"
+		bind:clientHeight={imageHeight}
 	/>
 
 	<div class="flex h-full flex-col">

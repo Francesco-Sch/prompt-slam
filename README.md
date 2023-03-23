@@ -9,6 +9,7 @@
   - Built with [SvelteKit](https://kit.svelte.dev/)
   - Made beautiful with [Tailwind CSS](https://tailwindcss.com/)
   - Uses the [Open AI API](https://platform.openai.com/) to talk to [DALL·E 2](https://openai.com/product/dall-e-2)
+  - Icons: Tabler Icons: https://tabler.io/docs/icons/svelte
 
 ## 🚧 Development
 
