@@ -40,11 +40,11 @@
 
 	<div class="flex h-full flex-col">
 		<p
-			class="mb-5 overflow-y-auto font-redaction text-5xl"
+			class="overflow-y-auto font-redaction sm:mb-2 md:mb-5 md:text-2xl lg:text-5xl"
 			style="height: {textContainerHeight}px"
 		>
 			{prompt}
 		</p>
-		<p class="mt-auto">by {user}</p>
+		<p class="mt-auto text-xs md:text-base">by {user}</p>
 	</div>
 </div>
