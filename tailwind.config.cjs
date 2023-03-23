@@ -39,6 +39,12 @@ module.exports = {
 				'screen-60': '60vw',
 				'screen-80': '80vw',
 				'screen-full': '100vw'
+			},
+			maxHeight: {
+				'screen-20': '20vw',
+				'screen-40': '40vw',
+				'screen-60': '60vw',
+				'screen-80': '80vw'
 			}
 		}
 	},
