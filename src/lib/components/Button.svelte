@@ -15,7 +15,7 @@
 		<button
 			on:click
 			{type}
-			class="h-full px-20 py-7 font-redaction-50 text-xl hover:animate-unpixelate-font {classes}"
+			class="h-full px-20 py-7 font-redaction-50 text-xl hover:animate-unpixelate-font-50-0 {classes}"
 			class:bg-prompt-orange={$theme === 'orange' &&
 				$colorizedBackground === false}
 			class:bg-prompt-blue={$theme === 'blue' && $colorizedBackground === false}
@@ -30,7 +30,7 @@
 		on:click
 		{form}
 		{type}
-		class="h-full px-20 py-7 font-redaction-50 text-xl hover:animate-unpixelate-font {classes}"
+		class="h-full px-20 py-7 font-redaction-50 text-xl hover:animate-unpixelate-font-50-0 {classes}"
 		class:bg-prompt-orange={$theme === 'orange' &&
 			$colorizedBackground === false}
 		class:bg-prompt-blue={$theme === 'blue' && $colorizedBackground === false}
