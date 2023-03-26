@@ -34,7 +34,6 @@
 	"dependencies": {
 		"@tabler/icons-svelte": "^2.11.0",
 		"openai": "^3.2.1",
-		"prettier-plugin-svelte": "^2.9.0",
-		"vite-plugin-favicons-inject": "^2.2.0"
+		"prettier-plugin-svelte": "^2.9.0"
 	}
 }
