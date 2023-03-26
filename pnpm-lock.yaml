@@ -17,6 +17,7 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.2.4
   svelte: ^3.54.0
   svelte-check: ^3.0.1
+  svelte-meta-tags: ^2.7.0
   tailwindcss: ^3.2.7
   tslib: ^2.4.1
   typescript: ^4.9.3
@@ -26,6 +27,7 @@ dependencies:
   '@tabler/icons-svelte': 2.11.0_svelte@3.55.1
   openai: 3.2.1
   prettier-plugin-svelte: 2.9.0_jrsxveqmsx2uadbqiuq74wlc4u
+  svelte-meta-tags: 2.7.0_4x7phaipmicbaooxtnresslofa
 
 devDependencies:
   '@sveltejs/adapter-auto': 2.0.0_@sveltejs+kit@1.11.0
@@ -1805,6 +1807,14 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /schema-dts/1.1.2_typescript@4.9.5:
+    resolution: {integrity: sha512-MpNwH0dZJHinVxk9bT8XUdjKTxMYrA5bLtrrGmFA6PTLwlOKnhi67XoRd6/ty+Djt6ZC0slR57qFhZDNMI6DhQ==}
+    peerDependencies:
+      typescript: '>=4.1.0'
+    dependencies:
+      typescript: 4.9.5
+    dev: false
+
   /semver/7.3.8:
     resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}
     engines: {node: '>=10'}
@@ -1929,6 +1939,17 @@ packages:
     dependencies:
       svelte: 3.55.1
     dev: true
+
+  /svelte-meta-tags/2.7.0_4x7phaipmicbaooxtnresslofa:
+    resolution: {integrity: sha512-52mNWYxyfQQobm0zIMs78fcQrabbvmqJ3HnkoyFQD5WwqUVN5fXVB75rY8T3ObnJZn/C2HTPq8eI8f3pjFNlFQ==}
+    peerDependencies:
+      svelte: ^3.44.0
+    dependencies:
+      schema-dts: 1.1.2_typescript@4.9.5
+      svelte: 3.55.1
+    transitivePeerDependencies:
+      - typescript
+    dev: false
 
   /svelte-preprocess/5.0.1_k4bhxdknaltjvjwprbm23edr5q:
     resolution: {integrity: sha512-0HXyhCoc9rsW4zGOgtInylC6qj259E1hpFnJMJWTf+aIfeqh4O/QHT31KT2hvPEqQfdjmqBR/kO2JDkkciBLrQ==}
@@ -2074,7 +2095,6 @@ packages:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /undici/5.20.0:
     resolution: {integrity: sha512-J3j60dYzuo6Eevbawwp1sdg16k5Tf768bxYK4TUJRH7cBM4kFCbf3mOnM/0E3vQYXvpxITbbWmBafaDbxLDz3g==}
