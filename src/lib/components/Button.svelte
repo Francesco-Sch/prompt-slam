@@ -8,6 +8,8 @@
 	export let type: 'button' | 'reset' | 'submit' | null | undefined = 'button';
 	let classes: string = '';
 	export { classes as class };
+
+	let animate = false;
 </script>
 
 {#if href !== ''}
@@ -15,7 +17,15 @@
 		<button
 			on:click
 			{type}
-			class="h-full px-20 py-7 font-redaction-50 text-xl hover:animate-unpixelate-font-50-0 {classes}"
+			class="h-full px-20 py-7 text-center font-redaction-50 text-xl {classes}"
+			on:mouseenter={() => {
+				animate = true;
+			}}
+			on:mouseleave={() => {
+				animate = false;
+			}}
+			class:animate-unpixelate-font-50-0={animate}
+			class:animate-pixelate-font-0-50={!animate}
 			class:bg-prompt-orange={$theme === 'orange' &&
 				$colorizedBackground === false}
 			class:bg-prompt-blue={$theme === 'blue' && $colorizedBackground === false}
@@ -30,7 +40,15 @@
 		on:click
 		{form}
 		{type}
-		class="h-full px-20 py-7 font-redaction-50 text-xl hover:animate-unpixelate-font-50-0 {classes}"
+		class="h-full px-20 py-7 font-redaction-50 text-xl {classes}"
+		on:mouseenter={() => {
+			animate = true;
+		}}
+		on:mouseleave={() => {
+			animate = false;
+		}}
+		class:animate-unpixelate-font-50-0={animate}
+		class:animate-pixelate-font-0-50={!animate}
 		class:bg-prompt-orange={$theme === 'orange' &&
 			$colorizedBackground === false}
 		class:bg-prompt-blue={$theme === 'blue' && $colorizedBackground === false}

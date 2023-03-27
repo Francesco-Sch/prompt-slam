@@ -9,8 +9,30 @@
 	import '../styles/app.css';
 
 	export let data: LayoutData;
+
+	const fonts = [
+		'Redaction',
+		'Redaction_10',
+		'Redaction_20',
+		'Redaction_35',
+		'Redaction_50'
+	];
 </script>
 
+<!-- Prefetch critical ressources -->
+<svelte:head>
+	{#each fonts as font}
+		<link
+			rel="preload"
+			href="/fonts/{font}-Regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+	{/each}
+</svelte:head>
+
+<!-- Add Meta Tags for Open Graph Protocol -->
 <MetaTags
 	title="Prompt Battle"
 	description="Battle each other in an amazing prompt battle using the power of DALL-E."
