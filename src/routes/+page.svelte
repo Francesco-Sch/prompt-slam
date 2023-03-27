@@ -1,8 +1,10 @@
 <script lang="ts">
-	import { user, theme } from '$lib/store';
+	import { user, theme, colorizedBackground } from '$lib/store';
 	import ThemeSwitch from '$lib/components/ThemeSwitch.svelte';
 	import ActionBar from '$lib/layout/ActionBar.svelte';
 	import Button from '$lib/components/Button.svelte';
+
+	$colorizedBackground = false;
 </script>
 
 <div class="flex h-full flex-col">
