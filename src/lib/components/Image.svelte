@@ -10,6 +10,8 @@
 	<!-- Download Button -->
 	<a
 		href={src}
+		target="_blank"
+		rel="noopener noreferrer"
 		download
 		class="absolute top-4 right-4 rounded-lg bg-white p-2 opacity-0 transition duration-200 hover:bg-slate-200 group-hover:opacity-100"
 	>

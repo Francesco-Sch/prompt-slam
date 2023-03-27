@@ -17,7 +17,7 @@
 		<button
 			on:click
 			{type}
-			class="h-full px-20 py-7 font-redaction-50 text-xl hover:animate-unpixelate-font-50-0 {classes}"
+			class="h-full px-20 py-7 text-center font-redaction-50 text-xl {classes}"
 			on:mouseenter={() => {
 				animate = true;
 			}}
@@ -40,7 +40,7 @@
 		on:click
 		{form}
 		{type}
-		class="h-full px-20 py-7 font-redaction-50 text-xl hover:animate-unpixelate-font-50-0 {classes}"
+		class="h-full px-20 py-7 font-redaction-50 text-xl {classes}"
 		on:mouseenter={() => {
 			animate = true;
 		}}

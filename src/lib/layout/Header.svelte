@@ -7,7 +7,7 @@
 <header class="absolute inset-x-0 top-0 flex items-center justify-center py-3">
 	<a href="/">
 		<h1
-			class="group font-redaction-50 text-base hover:animate-unpixelate-font-50-0"
+			class="group font-redaction-50 text-base"
 			on:mouseenter={() => {
 				animate = true;
 			}}
