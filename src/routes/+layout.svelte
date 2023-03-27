@@ -11,6 +11,46 @@
 	export let data: LayoutData;
 </script>
 
+<!-- Prefetch critical ressources -->
+<svelte:head>
+	<link
+		rel="preload"
+		href="/fonts/Redaction-Regular.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link
+		rel="preload"
+		href="/fonts/Redaction_10-Regular.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link
+		rel="preload"
+		href="/fonts/Redaction_20-Regular.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link
+		rel="preload"
+		href="/fonts/Redaction_35-Regular.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+	<link
+		rel="preload"
+		href="/fonts/Redaction_50-Regular.woff2"
+		as="font"
+		type="font/woff2"
+		crossorigin
+	/>
+</svelte:head>
+
+<!-- Add Meta Tags for Open Graph Protocol -->
 <MetaTags
 	title="Prompt Battle"
 	description="Battle each other in an amazing prompt battle using the power of DALL-E."

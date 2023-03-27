@@ -14,9 +14,8 @@ module.exports = {
 		extend: {
 			animation: {
 				'unpixelate-font-50-0':
-					'unpixelate-font-50-0 0.5s ease-in-out alternate forwards',
-				'pixelate-font-0-50':
-					'pixelate-font-0-50 0.5s ease-in-out alternate forwards'
+					'unpixelate-font-50-0 450ms ease-in-out forwards',
+				'pixelate-font-0-50': 'pixelate-font-0-50 450ms ease-in-out forwards'
 			},
 			colors: {
 				'prompt-orange': {
