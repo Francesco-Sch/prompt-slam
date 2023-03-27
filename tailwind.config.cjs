@@ -13,8 +13,10 @@ module.exports = {
 		},
 		extend: {
 			animation: {
-				'unpixelate-font':
-					'unpixelate-font-50-0 0.5s ease-in-out alternate forwards'
+				'unpixelate-font-50-0':
+					'unpixelate-font-50-0 0.5s ease-in-out alternate forwards',
+				'pixelate-font-0-50':
+					'pixelate-font-0-50 0.5s ease-in-out alternate forwards'
 			},
 			colors: {
 				'prompt-orange': {
@@ -31,6 +33,13 @@ module.exports = {
 					'50%': { 'font-family': '"Redaction 20", "system-ui", "serif"' },
 					'70%': { 'font-family': '"Redaction 10", "system-ui", "serif"' },
 					'100%': { 'font-family': '"Redaction", "system-ui", "serif"' }
+				},
+				'pixelate-font-0-50': {
+					'0%': { 'font-family': '"Redaction", "system-ui", "serif"' },
+					'25%': { 'font-family': '"Redaction 10", "system-ui", "serif"' },
+					'50%': { 'font-family': '"Redaction 20", "system-ui", "serif"' },
+					'70%': { 'font-family': '"Redaction 35", "system-ui", "serif"' },
+					'100%': { 'font-family': '"Redaction 50", "system-ui", "serif"' }
 				}
 			},
 			maxWidth: {
