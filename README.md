@@ -1,15 +1,21 @@
-# Prompt Battle ‒ Interface for prompting with Dall-E
+![README Header](./.github/readme-header.png)
+
+# The Promp Battle Interface
+
+> Battle each other in an amazing prompt battle using the power of DALL-E.
 
 ## 📝 Colophon
 
 - Fonts in use:
   - [Redaction](https://www.redaction.us/) by [Jeremy Mickel](https://mckltype.com/)
-  - [Roboto](https://fonts.google.com/specimen/Roboto) by [Christian Robertson](http://christianrobertson.com/)
+  - [Helvetica]() by ...
 - Technology:
   - Built with [SvelteKit](https://kit.svelte.dev/)
   - Made beautiful with [Tailwind CSS](https://tailwindcss.com/)
+  - Complemented with carefully crafted icons from [Tabler Icons](https://tabler.io/docs/icons/svelte)
   - Uses the [Open AI API](https://platform.openai.com/) to talk to [DALL·E 2](https://openai.com/product/dall-e-2)
-  - Icons: Tabler Icons: https://tabler.io/docs/icons/svelte
+
+## Usage
 
 ## 🚧 Development
 
