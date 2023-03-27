@@ -9,45 +9,27 @@
 	import '../styles/app.css';
 
 	export let data: LayoutData;
+
+	const fonts = [
+		'Redaction',
+		'Redaction_10',
+		'Redaction_20',
+		'Redaction_35',
+		'Redaction_50'
+	];
 </script>
 
 <!-- Prefetch critical ressources -->
 <svelte:head>
-	<link
-		rel="preload"
-		href="/fonts/Redaction-Regular.woff2"
-		as="font"
-		type="font/woff2"
-		crossorigin
-	/>
-	<link
-		rel="preload"
-		href="/fonts/Redaction_10-Regular.woff2"
-		as="font"
-		type="font/woff2"
-		crossorigin
-	/>
-	<link
-		rel="preload"
-		href="/fonts/Redaction_20-Regular.woff2"
-		as="font"
-		type="font/woff2"
-		crossorigin
-	/>
-	<link
-		rel="preload"
-		href="/fonts/Redaction_35-Regular.woff2"
-		as="font"
-		type="font/woff2"
-		crossorigin
-	/>
-	<link
-		rel="preload"
-		href="/fonts/Redaction_50-Regular.woff2"
-		as="font"
-		type="font/woff2"
-		crossorigin
-	/>
+	{#each fonts as font}
+		<link
+			rel="preload"
+			href="/fonts/{font}-Regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+	{/each}
 </svelte:head>
 
 <!-- Add Meta Tags for Open Graph Protocol -->
