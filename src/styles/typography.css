@@ -5,19 +5,19 @@ Redaction
 /* Redacion */
 @font-face {
 	font-family: 'Redaction';
-	src: url('../../fonts/Redaction-Regular.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction';
-	src: url('../../fonts/Redaction-Bold.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction-Bold.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction';
-	src: url('../../fonts/Redaction-Italic.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction-Italic.woff2') format('woff2');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -25,19 +25,19 @@ Redaction
 /* Redacion 10 */
 @font-face {
 	font-family: 'Redaction 10';
-	src: url('../../fonts/Redaction_10-Regular.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_10-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction 10';
-	src: url('../../fonts/Redaction_10-Bold.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_10-Bold.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction 10';
-	src: url('../../fonts/Redaction_10-Italic.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_10-Italic.woff2') format('woff2');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -45,19 +45,19 @@ Redaction
 /* Redacion 20 */
 @font-face {
 	font-family: 'Redaction 20';
-	src: url('../../fonts/Redaction_20-Regular.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_20-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction 20';
-	src: url('../../fonts/Redaction_20-Bold.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_20-Bold.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction 20';
-	src: url('../../fonts/Redaction_20-Italic.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_20-Italic.woff2') format('woff2');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -65,19 +65,19 @@ Redaction
 /* Redacion 35 */
 @font-face {
 	font-family: 'Redaction 35';
-	src: url('../../fonts/Redaction_35-Regular.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_35-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction 35';
-	src: url('../../fonts/Redaction_35-Bold.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_35-Bold.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction 35';
-	src: url('../../fonts/Redaction_35-Italic.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_35-Italic.woff2') format('woff2');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -85,19 +85,19 @@ Redaction
 /* Redacion 50 */
 @font-face {
 	font-family: 'Redaction 50';
-	src: url('../../fonts/Redaction_50-Regular.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_50-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction 50';
-	src: url('../../fonts/Redaction_50-Bold.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_50-Bold.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction 50';
-	src: url('../../fonts/Redaction_50-Italic.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_50-Italic.woff2') format('woff2');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -105,19 +105,19 @@ Redaction
 /* Redacion 70 */
 @font-face {
 	font-family: 'Redaction 70';
-	src: url('../../fonts/Redaction_70-Regular.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_70-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction 70';
-	src: url('../../fonts/Redaction_70-Bold.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_70-Bold.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction 70';
-	src: url('../../fonts/Redaction_70-Italic.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_70-Italic.woff2') format('woff2');
 	font-weight: normal;
 	font-style: italic;
 }
@@ -125,19 +125,19 @@ Redaction
 /* Redacion 100 */
 @font-face {
 	font-family: 'Redaction 100';
-	src: url('../../fonts/Redaction_100-Regular.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_100-Regular.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction 100';
-	src: url('../../fonts/Redaction_100-Bold.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_100-Bold.woff2') format('woff2');
 	font-weight: bold;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Redaction 100';
-	src: url('../../fonts/Redaction_100-Italic.woff2') format('woff2');
+	src: url('$lib/assets/fonts/Redaction_100-Italic.woff2') format('woff2');
 	font-weight: normal;
 	font-style: italic;
 }
