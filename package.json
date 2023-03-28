@@ -33,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-node": "^1.2.3",
 		"@tabler/icons-svelte": "^2.11.0",
 		"openai": "^3.2.1",
 		"prettier-plugin-svelte": "^2.9.0"
