@@ -73,4 +73,4 @@ To start the production build use:
 node build/index.js
 ```
 
-This starts the interfaces as a node.js app.
+This starts the interface as a node.js app.
