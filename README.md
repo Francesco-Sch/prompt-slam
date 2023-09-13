@@ -40,7 +40,9 @@ Other gamemodes are currently developed and will be added to this repo in the fu
 
 To use this interface you only need API access to the [OpenAI API](https://openai.com/product).
 
-Replace `YOUR_OPENAI_API_KEY` in the `.env.example` file with your OpenAI API key. You can then either host the interface locally or deploy it to the hosting provider of your choice.
+Replace `YOUR_OPENAI_API_KEY` in the `.env.example` file with your OpenAI API key. Then rename the `.env.example` to `.env`.
+
+You can then either host the interface locally or deploy it to the hosting provider of your choice.
 
 ## 🚧 Development
 
@@ -64,3 +66,11 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+To start the production build use:
+
+```
+node build/index.js
+```
+
+This starts the interfaces as a node.js app.
