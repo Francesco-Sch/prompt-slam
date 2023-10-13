@@ -24,7 +24,9 @@
 			let response = JSON.parse(JSON.stringify(result));
 
 			if (response.status == 200) {
-				url = response.data.url;
+				url = response.data.url.url;
+
+				console.log(url);
 
 				// Makes sure that the image is loaded properly
 				setTimeout(() => {
