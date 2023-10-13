@@ -34,32 +34,32 @@
 
 <!-- Add Meta Tags for Open Graph Protocol -->
 <MetaTags
-	title="Prompt Battle"
-	description="Battle each other in an amazing prompt battle using the power of DALL-E."
+	title="Prompt Slam"
+	description="Battle each other in an amazing prompt slam using the power of DALL-E."
 	openGraph={{
 		url: $page.url.href,
-		title: 'Prompt Battle',
+		title: 'Prompt Slam',
 		description:
-			'Battle each other in an amazing prompt battle using the power of DALL-E.',
+			'Battle each other in an amazing prompt slam using the power of DALL-E.',
 		images: [
 			{
 				url: `${$page.url.origin}/og-image.png`,
 				width: 1200,
 				height: 630,
-				alt: 'Prompt Battle'
+				alt: 'Prompt Slam'
 			}
 		],
-		site_name: 'Prompt Battle'
+		site_name: 'Prompt Slam'
 	}}
 	twitter={{
 		handle: '@handle',
 		site: '@site',
 		cardType: 'summary_large_image',
-		title: 'Prompt Battle',
+		title: 'Prompt Slam',
 		description:
-			'Battle each other in an amazing prompt battle using the power of DALL-E.',
+			'Battle each other in an amazing prompt slam using the power of DALL-E.',
 		image: `${$page.url.origin}/twitter-image.png`,
-		imageAlt: 'Prompt Battle'
+		imageAlt: 'Prompt Slam'
 	}}
 	facebook={{
 		appId: '1234567890'

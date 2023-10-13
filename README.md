@@ -1,20 +1,20 @@
 ![README Header](./.github/readme-header.png)
 
-# The Promp Fight Interface
+# The Promp Slam Interface
 
-> Battle each other in an amazing prompt fight using the power of DALL-E.
+> Battle each other in an amazing prompt slam using the power of DALL-E.
 
-A prompt fight (also known as a prompt battle) is an event format invented by [Florian A. Schmidt](https://florianalexanderschmidt.de/) and [Sebastian Schmieg](https://sebastianschmieg.com/) with design students from the [HTW Dresden](https://www.htw-dresden.de/).
+A Prompt Slam (also known as a prompt battle) is an event format invented by [Florian A. Schmidt](https://florianalexanderschmidt.de/) and [Sebastian Schmieg](https://sebastianschmieg.com/) with design students from the [HTW Dresden](https://www.htw-dresden.de/).
 
-During a prompt fight people compete against each other using text-to-image AI models. The audience then chooses one of the contestants as a winner.
-For an independent prompt fight event series, hosted at [HfK Bremen](https://www.hfk2020.de/), this interface was developed.
+During a Prompt Slam people compete against each other using text-to-image AI models. The audience then chooses one of the contestants as a winner.
+For an independent Prompt Slam event series, hosted at [HfK Bremen](https://www.hfk2020.de/), this interface was developed.
 
-You can read more about the original prompt battle [here](https://promptbattle.com/).
+You can read more about the original Prompt Slam [here](https://promptbattle.com/).
 
 ## 📝 Colophon
 
 - Fonts in use:
-  - [Redaction](https://www.redaction.us/) by [Jeremy Mickel](https://mckltype.com/)
+  - [Redaction](https://www.redaction.us/) by [Jeremy Mickel](https://mckltypeq.com/)
   - [Helvetica](https://www.linotype.com/de/1308886/helvetica-schriftfamilie.html) by Max Miedinger and Eduard Hoffmann
 - Technology:
   - Built with [SvelteKit](https://kit.svelte.dev/)
@@ -28,7 +28,7 @@ You can read more about the original prompt battle [here](https://promptbattle.c
 
 In this gamemode two contestants play against each other simultaneously.
 In the beginning they will both get an instruction on what they need to generate. They then have one minutes to simultaneously create a prompt.
-After that minute is over, they both click 'Generate' to generate an image.
+after that one minute is over, they both click 'Generate' to generate an image.
 
 The crowd then decides which of the contestant has generated the better image and that constestant goes to the next round.
 

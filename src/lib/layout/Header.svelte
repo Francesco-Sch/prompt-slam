@@ -23,7 +23,7 @@
 			class:text-slate-900={$colorizedBackground === true}
 		>
 			Prompt <span class="font-redaction group-hover:animate-pixelate-font-0-50"
-				>Battle</span
+				>Slam</span
 			>
 		</h1>
 	</a>
