@@ -79,7 +79,7 @@ This starts the interface as a node.js app.
 
 Using the Dockerfile in this repository, you can also deploy the app as a Docker container.
 
-First, build the Docker image. Make sure to have added a OpenAPI Key to the `.env` file before building the the image.
+First, build the Docker image. Make sure to have add an OpenAPI Key to the `.env` file and adjust the ORIGIN variable before building the the image.
 
 ```bash
 docker build . -t prompt-slam
