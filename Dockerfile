@@ -1,7 +1,7 @@
-# For development purposes use `npm run dev` to start the server
+# For development purposes use `pnpm run dev` to start the server
 
-# Production build
-FROM node:19-alpine AS build
+# Production Build
+FROM node:lts-alpine AS build
 
 RUN npm install -g pnpm
  
