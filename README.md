@@ -82,7 +82,7 @@ Using the Dockerfile in this repository, you can also deploy the app as a Docker
 First, build the Docker image. Make sure to have added a OpenAPI Key to the `.env` file before building the the image.
 
 ```bash
-docker build . -t promp-slam
+docker build . -t prompt-slam
 ```
 
 Then start the created Docker image as a container.
