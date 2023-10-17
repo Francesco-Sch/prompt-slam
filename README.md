@@ -1,20 +1,20 @@
 ![README Header](./.github/readme-header.png)
 
-# The Promp Battle Interface
+# The Promp Slam Interface
 
-> Battle each other in an amazing prompt battle using the power of DALL-E.
+> Battle each other in an amazing prompt slam using the power of DALL-E.
 
-A prompt battle is an event format invented by [Florian A. Schmidt](https://florianalexanderschmidt.de/) and [Sebastian Schmieg](https://sebastianschmieg.com/) with design students from the [HTW Dresden](https://www.htw-dresden.de/).
+A Prompt Slam (also known as a prompt battle) is an event format invented by [Florian A. Schmidt](https://florianalexanderschmidt.de/) and [Sebastian Schmieg](https://sebastianschmieg.com/) with design students from the [HTW Dresden](https://www.htw-dresden.de/).
 
-During a Prompt battle people compete against each other using text-to-image AI models. The audience then chooses one of the contestants as a winner.
-For an independent Prompt Battle event series, hosted at [HfK Bremen](https://www.hfk2020.de/), this interface was developed.
+During a Prompt Slam people compete against each other using text-to-image AI models. The audience then chooses one of the contestants as a winner.
+For an independent Prompt Slam event series, hosted at [HfK Bremen](https://www.hfk2020.de/), this interface was developed.
 
-You can read more about the original Prompt Battle [here](https://promptbattle.com/).
+You can read more about the original Prompt Slam [here](https://promptbattle.com/).
 
 ## 📝 Colophon
 
 - Fonts in use:
-  - [Redaction](https://www.redaction.us/) by [Jeremy Mickel](https://mckltype.com/)
+  - [Redaction](https://www.redaction.us/) by [Jeremy Mickel](https://mckltypeq.com/)
   - [Helvetica](https://www.linotype.com/de/1308886/helvetica-schriftfamilie.html) by Max Miedinger and Eduard Hoffmann
 - Technology:
   - Built with [SvelteKit](https://kit.svelte.dev/)
@@ -40,7 +40,9 @@ Other gamemodes are currently developed and will be added to this repo in the fu
 
 To use this interface you only need API access to the [OpenAI API](https://openai.com/product).
 
-Replace `YOUR_OPENAI_API_KEY` in the `.env.example` file with your OpenAI API key. You can then either host the interface locally or deploy it to the hosting provider of your choice.
+Replace `YOUR_OPENAI_API_KEY` in the `.env.example` file with your OpenAI API key. Then rename the `.env.example` to `.env`.
+
+You can then either host the interface locally or deploy it to the hosting provider of your choice.
 
 ## 🚧 Development
 
@@ -64,3 +66,11 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+To start the production build use:
+
+```
+node build/index.js
+```
+
+This starts the interface as a node.js app.

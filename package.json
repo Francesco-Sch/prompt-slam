@@ -1,5 +1,5 @@
 {
-	"name": "prompt-battle",
+	"name": "prompt-slam",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -12,30 +12,28 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/adapter-node": "^1.2.3",
-		"@sveltejs/kit": "^1.5.0",
-		"@typescript-eslint/eslint-plugin": "^5.45.0",
-		"@typescript-eslint/parser": "^5.45.0",
-		"autoprefixer": "^10.4.13",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
+		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/kit": "^1.25.2",
+		"@typescript-eslint/eslint-plugin": "^5.62.0",
+		"@typescript-eslint/parser": "^5.62.0",
+		"autoprefixer": "^10.4.16",
+		"eslint": "^8.51.0",
+		"eslint-config-prettier": "^8.10.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"postcss": "^8.4.21",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.10.0",
-		"prettier-plugin-tailwindcss": "^0.2.4",
-		"svelte": "^3.54.0",
-		"svelte-check": "^3.0.1",
-		"svelte-meta-tags": "^2.7.0",
-		"tailwindcss": "^3.2.7",
-		"tslib": "^2.4.1",
-		"typescript": "^4.9.3",
-		"vite": "^4.0.0"
+		"postcss": "^8.4.31",
+		"prettier": "^2.8.8",
+		"prettier-plugin-tailwindcss": "^0.2.8",
+		"svelte": "^3.59.2",
+		"svelte-check": "^3.5.2",
+		"svelte-meta-tags": "^2.8.0",
+		"tailwindcss": "^3.3.3",
+		"tslib": "^2.6.2",
+		"typescript": "^4.9.5",
+		"vite": "^4.4.11"
 	},
 	"type": "module",
 	"dependencies": {
-		"@tabler/icons-svelte": "^2.11.0",
-		"openai": "^3.2.1"
+		"openai": "^4.12.1",
+		"prettier-plugin-svelte": "^2.10.1"
 	}
 }
