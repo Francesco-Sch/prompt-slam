@@ -1,5 +1,5 @@
 import OpenAI from 'openai';
-import { OPENAI_API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import type { Actions } from './$types';
 
 export const actions = {
@@ -8,7 +8,7 @@ export const actions = {
 		const prompt = formData.get('prompt') as string;
 
 		const openai = new OpenAI({
-			apiKey: OPENAI_API_KEY
+			apiKey: env.OPENAI_API_KEY
 		});
 
 		const DalleResponse = await openai.images.generate({
