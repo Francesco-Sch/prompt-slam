@@ -12,5 +12,4 @@ RUN pnpm install
 COPY . .
 RUN pnpm build
 
-EXPOSE 3000
-CMD ["node", "build"]
+CMD node -r dotenv/config build

@@ -69,8 +69,24 @@ You can preview the production build with `npm run preview`.
 
 To start the production build use:
 
-```
+```bash
 node build/index.js
 ```
 
 This starts the interface as a node.js app.
+
+## 🐳 Deploy with Docker
+
+Using the Dockerfile in this repository, you can also deploy the app as a Docker container.
+
+First, build the Docker image. Make sure to have added a OpenAPI Key to the `.env` file before building the the image.
+
+```bash
+docker build . -t promp-slam
+```
+
+Then start the created Docker image as a container.
+
+```bash
+docker run -d -p 3000:3000 prompt-slam
+```
