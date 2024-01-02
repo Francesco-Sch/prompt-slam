@@ -1,6 +1,6 @@
 ![README Header](./.github/readme-header.png)
 
-# The Promp Slam Interface
+# The Prompt Slam Interface
 
 > Battle each other in an amazing prompt slam using the power of DALL-E.
 
