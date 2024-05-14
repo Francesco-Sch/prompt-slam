@@ -91,6 +91,18 @@ docker compose up -d
 
 This will automatically build the image and start the container.
 
+To stop the container you can run:
+
+```bash
+docker compose down
+```
+
+If you have made changes to the .env file you may want to rebuild the container:
+
+```bash
+docker compose up -d --build
+```
+
 ### Run with Dockerfile
 
 First you need to build the image with the following command:
