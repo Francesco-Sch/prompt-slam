@@ -1,0 +1,6 @@
+services:
+  prompt-slam:
+    build: .
+    container_name: prompt-slam
+    ports:
+      - '3000:3000'

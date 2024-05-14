@@ -77,9 +77,23 @@ This starts the interface as a node.js app.
 
 ## 🐳 Deploy with Docker
 
-Using the Dockerfile in this repository, you can also deploy the app as a Docker container.
+Using the Dockerfile or Docker Compose file in this repository, you can also run or deploy the app as a Docker container.
 
-First, build the Docker image. Make sure to have add an OpenAPI Key to the `.env` file and adjust the ORIGIN variable before building the the image.
+Make sure to add an OpenAPI Key to the `.env` file and adjust the ORIGIN variable before running the container.
+
+### Run with Docker Compose
+
+To start the container with docker compose just run:
+
+```bash
+docker compose up -d
+```
+
+This will automatically build the image and start the container.
+
+### Run with Dockerfile
+
+First you need to build the image with the following command:
 
 ```bash
 docker build . -t prompt-slam
