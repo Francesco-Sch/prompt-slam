@@ -27,8 +27,6 @@
 			if (response.status == 200) {
 				urls = response.data.data;
 
-				console.log(urls);
-
 				// Makes sure that the image is loaded properly
 				setTimeout(() => {
 					loading = false;
