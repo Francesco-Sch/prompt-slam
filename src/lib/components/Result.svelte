@@ -2,7 +2,7 @@
 	import { theme, colorizedBackground } from '$lib/store';
 	import Image from './Image.svelte';
 
-	export let image: string;
+	export let image: string[];
 	export let prompt: string;
 	export let user: string | undefined = undefined;
 
@@ -19,7 +19,7 @@
 	class:text-white={$colorizedBackground === true}
 >
 	<Image
-		src={image}
+		src={image[0]}
 		alt="The AI generated result"
 		bind:clientHeight={imageHeight}
 	/>

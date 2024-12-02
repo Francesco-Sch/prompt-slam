@@ -4,7 +4,7 @@ import { writable } from 'svelte/store';
 const user = writable('');
 
 // Settings
-const model = writable('dall-e-3');
+const model = writable<'dall-e-2' | 'dall-e-3'>('dall-e-3');
 const mode = writable<'1-for-all' | 'lucky-4'>('1-for-all');
 
 // Behaviour
