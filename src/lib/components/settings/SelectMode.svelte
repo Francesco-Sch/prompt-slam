@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { amountOfImages } from '$lib/store';
+	import { mode } from '$lib/store';
 
 	const modes = [
-		{ amount: 1, label: '🎲 1 for all' },
-		{ amount: 4, label: '🍀 Lucky 4' }
+		{ id: '1-for-all', label: '🎲 1 for all' },
+		{ id: 'lucky-4', label: '🍀 Lucky 4' }
 	];
 </script>
 
@@ -14,11 +14,11 @@
 
 	<select
 		id="mode-select"
-		bind:value={$amountOfImages}
+		bind:value={$mode}
 		class="w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-slate-500 focus:outline-none focus:ring-1 focus:ring-slate-500"
 	>
 		{#each modes as mode}
-			<option value={mode.amount}>
+			<option value={mode.id}>
 				{mode.label}
 			</option>
 		{/each}

@@ -5,10 +5,10 @@ const user = writable('');
 
 // Settings
 const model = writable('dall-e-3');
-const amountOfImages = writable(1);
+const mode = writable<'1-for-all' | 'lucky-4'>('1-for-all');
 
 // Behaviour
 const colorizedBackground = writable(false);
 const theme = writable('orange');
 
-export { user, model, amountOfImages, colorizedBackground, theme };
+export { user, model, mode, colorizedBackground, theme };
