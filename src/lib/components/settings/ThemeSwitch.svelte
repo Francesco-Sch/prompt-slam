@@ -14,6 +14,7 @@
 		class="theme-switch"
 	>
 		<div class="gradient-orange-to-blue from-prompt-orange to-prompt-blue" />
+		<p>Change color</p>
 	</button>
 {:else}
 	<button
@@ -23,12 +24,16 @@
 		class="theme-switch"
 	>
 		<div class="gradient-blue-to-orange from-prompt-blue to-prompt-orange" />
+		<p>Change color</p>
 	</button>
 {/if}
 
 <style lang="postcss">
 	.theme-switch {
-		@apply rounded-lg p-2 transition-colors hover:bg-slate-100;
+		@apply flex w-full items-center rounded-lg p-2 transition-colors hover:bg-slate-200;
+	}
+	.theme-switch p {
+		@apply ml-4 font-redaction-50 text-lg;
 	}
 	.gradient-orange-to-blue,
 	.gradient-blue-to-orange {

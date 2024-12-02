@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { user, theme, colorizedBackground } from '$lib/store';
-	import ThemeSwitch from '$lib/components/ThemeSwitch.svelte';
+	import ThemeSwitch from '$lib/components/settings/ThemeSwitch.svelte';
 	import ActionBar from '$lib/layout/ActionBar.svelte';
 	import Button from '$lib/components/Button.svelte';
+	import SettingsButton from '$lib/components/settings/SettingsButton.svelte';
 
 	$colorizedBackground = false;
 </script>
@@ -26,7 +27,7 @@
 
 	<ActionBar>
 		<div class="my-4 ml-4">
-			<ThemeSwitch />
+			<SettingsButton />
 		</div>
 		<div class="ml-auto">
 			<Button label="Start the slam" href="/prompt" />
