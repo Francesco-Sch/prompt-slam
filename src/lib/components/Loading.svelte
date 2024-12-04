@@ -1,18 +1,17 @@
 <script lang="ts">
-	import { theme, colorizedBackground } from '$lib/store';
+	import { mode } from '$lib/store';
 </script>
 
-<div class="relative flex h-12 w-12 items-center justify-center">
-	<span
-		class="absolute inline-flex h-full w-full animate-ping rounded-full bg-prompt-orange opacity-75"
-		class:bg-prompt-orange={$theme === 'orange' &&
-			$colorizedBackground === false}
-		class:bg-prompt-blue={$theme === 'blue' && $colorizedBackground === false}
-	/>
-	<span
-		class="relative inline-flex h-12 w-12 rounded-full"
-		class:bg-prompt-orange={$theme === 'orange' &&
-			$colorizedBackground === false}
-		class:bg-prompt-blue={$theme === 'blue' && $colorizedBackground === false}
-	/>
+<div class="relative flex h-min w-min items-center justify-center">
+	{#if $mode === '1-for-all'}
+		<!-- Mode "1 for all" -->
+		<div class="h-96 w-96 animate-pulse bg-slate-500" />
+	{:else if $mode === 'lucky-4'}
+		<!-- Mode "Lucky 4" -->
+		<div class="flex space-x-6">
+			{#each Array(4) as _}
+				<div class="h-80 w-80 animate-pulse bg-slate-500" />
+			{/each}
+		</div>
+	{/if}
 </div>

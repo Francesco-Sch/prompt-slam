@@ -24,13 +24,20 @@ You can read more about the original Prompt Slam [here](https://promptbattle.com
 
 ## 🎲 How to play
 
-### Gamemode: One vs. One
+In general, a Prompt Slam is played like this. Two players or teams play against each other at the same time. At the start, they are both given instructions on what they need to create. They then have one minute to create a prompt simultaneously.
+At the end of that minute, they both click 'Generate' to generate their prompt.
 
-In this gamemode two contestants play against each other simultaneously.
-In the beginning they will both get an instruction on what they need to generate. They then have one minutes to simultaneously create a prompt.
-after that one minute is over, they both click 'Generate' to generate an image.
+The crowd then decides which of the players has generated the better image and that player moves on to the next round. This continues for X number of rounds, depending on your decision and how many players you have. The winner of the final is the winner of the Prompt Slam! 🥳
 
-The crowd then decides which of the contestant has generated the better image and that constestant goes to the next round.
+On the start page, click on the cogwheel in the bottom left corner to access the settings panel. Here you can set the following different game modes
+
+### Game Mode: 🎲 1 for all
+
+In this gamemode the player can write one prompt to generate one image. When the time is up, they press 'Generate' and are presented with only one image. The crowd then decides.
+
+### Game Mode: 🍀 Lucky 4
+
+In _🍀 Lucky 4_ the player also has only one attempt of prompting. Unlike _🎲 1 for all_ they are presented with four generated images to choose from. Once they have chosen one of the four images, they click on it and the crowd votes on it.
 
 ### Other Gamemodes
 

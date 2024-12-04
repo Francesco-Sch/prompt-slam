@@ -3,18 +3,19 @@
 	import { slide, fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 
-	import { user, colorizedBackground } from '$lib/store';
+	import { user, colorizedBackground, mode, model } from '$lib/store';
 
 	import ActionBar from '$lib/layout/ActionBar.svelte';
 	import Button from '$lib/components/Button.svelte';
 	import Loading from '$lib/components/Loading.svelte';
 	import Result from '$lib/components/Result.svelte';
+	import ChooseResult from '$lib/components/ChooseResult.svelte';
 
 	$colorizedBackground = true;
 
 	let loading = false;
 	let prompt: string;
-	let url: string;
+	let urls: string[];
 
 	const handleSubmit: SubmitFunction = () => {
 		$colorizedBackground = false;
@@ -24,9 +25,7 @@
 			let response = JSON.parse(JSON.stringify(result));
 
 			if (response.status == 200) {
-				url = response.data.url.url;
-
-				console.log(url);
+				urls = response.data.data;
 
 				// Makes sure that the image is loaded properly
 				setTimeout(() => {
@@ -43,13 +42,15 @@
 <div class="flex h-full flex-col">
 	<div class="flex h-full items-center justify-center">
 		<!-- Prompting -->
-		{#if !loading && url == undefined}
+		{#if !loading && urls == undefined}
 			<form
 				id="promptForm"
 				method="POST"
 				use:enhance={handleSubmit}
 				class="h-full w-full px-6 pb-6 pt-14"
 			>
+				<input type="hidden" name="model" value={$model} />
+				<input type="hidden" name="mode" value={$mode} />
 				<label for="prompt">
 					<textarea name="prompt" class="prompt-input" bind:value={prompt} />
 				</label>
@@ -72,7 +73,7 @@
 		{/if}
 
 		<!-- Display the result -->
-		{#if !loading && url != undefined}
+		{#if !loading && urls != undefined}
 			<div
 				in:fly={{
 					delay: 300,
@@ -82,13 +83,17 @@
 					easing: quintOut
 				}}
 			>
-				<Result image={url} {prompt} user={$user} />
+				{#if $mode === 'lucky-4'}
+					<ChooseResult images={urls} {prompt} user={$user} />
+				{:else}
+					<Result image={urls} {prompt} user={$user} />
+				{/if}
 			</div>
 		{/if}
 	</div>
 
 	<!-- Prompting -->
-	{#if !loading && url == undefined}
+	{#if !loading && urls == undefined}
 		<div out:slide={{ duration: 1000, easing: quintOut }}>
 			<ActionBar>
 				<div class="my-4 ml-4">
@@ -102,7 +107,7 @@
 	{/if}
 
 	<!-- Start a new game -->
-	{#if !loading && url != undefined}
+	{#if !loading && urls != undefined}
 		<div in:slide={{ duration: 1000, easing: quintOut }}>
 			<ActionBar>
 				<Button
