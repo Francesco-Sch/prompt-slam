@@ -17,14 +17,21 @@ export const actions = {
 			| OpenAI.Images.ImagesResponse[]
 			| OpenAI.Images.ImagesResponse;
 
-		if (model === 'dall-e-2') {
+		if (model === 'gpt-image-1') {
 			DalleResponse = await openai.images.generate({
 				model: model,
 				prompt: prompt,
 				n: mode === '1-for-all' ? 1 : 4,
 				size: '1024x1024',
-				quality: 'standard',
-				response_format: 'url'
+				quality: 'auto'
+			});
+		} else if (model === 'dall-e-2') {
+			DalleResponse = await openai.images.generate({
+				model: model,
+				prompt: prompt,
+				n: mode === '1-for-all' ? 1 : 4,
+				size: '1024x1024',
+				response_format: 'b64_json'
 			});
 		} else if (model === 'dall-e-3' && mode === 'lucky-4') {
 			// Make 4 requests to DALL-E 3
@@ -37,7 +44,7 @@ export const actions = {
 						n: 1,
 						size: '1024x1024',
 						quality: 'standard',
-						response_format: 'url'
+						response_format: 'b64_json'
 					});
 				});
 
@@ -49,7 +56,7 @@ export const actions = {
 				n: 1,
 				size: '1024x1024',
 				quality: 'standard',
-				response_format: 'url'
+				response_format: 'b64_json'
 			});
 		}
 
@@ -57,9 +64,11 @@ export const actions = {
 			success: true,
 			data: Array.isArray(DalleResponse)
 				? DalleResponse.flatMap((response) =>
-						response.data.map((img) => img.url)
+						response.data.map((img) => `data:image/png;base64,${img.b64_json}`)
 				  )
-				: DalleResponse.data.map((img) => img.url)
+				: DalleResponse.data.map(
+						(img) => `data:image/png;base64,${img.b64_json}`
+				  )
 		};
 	}
 } satisfies Actions;
