@@ -3,7 +3,8 @@
 
 	const models = [
 		{ id: 'dall-e-2', name: 'Dall-E 2' },
-		{ id: 'dall-e-3', name: 'Dall-E 3' }
+		{ id: 'dall-e-3', name: 'Dall-E 3' },
+		{ id: 'gpt-image-1', name: 'GPT Image 1' }
 	];
 </script>
 
