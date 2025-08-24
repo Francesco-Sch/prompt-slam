@@ -20,7 +20,7 @@ You can read more about the original Prompt Slam [here](https://promptbattle.com
   - Built with [SvelteKit](https://kit.svelte.dev/)
   - Made beautiful with [Tailwind CSS](https://tailwindcss.com/)
   - Complemented with carefully crafted icons from [Tabler Icons](https://tabler.io/docs/icons/svelte)
-  - Uses the [Open AI API](https://platform.openai.com/) to talk to [DALL·E 2](https://openai.com/product/dall-e-2)
+  - Uses the [Open AI API](https://platform.openai.com/) to talk to [DALL·E 2](https://openai.com/index/dall-e-2), [DALL·E 3](https://openai.com/index/dall-e-3) and [GPT Image 1](https://platform.openai.com/docs/models/gpt-image-1)
 
 ## 🎲 How to play
 
