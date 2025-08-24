@@ -2,7 +2,7 @@
 
 # The Prompt Slam Interface
 
-> Battle each other in an amazing prompt slam using the power of DALL-E.
+> Battle each other in an amazing prompt slam using the power of DALL-E and GPT Image 1.
 
 A Prompt Slam (also known as a prompt battle) is an event format invented by [Florian A. Schmidt](https://florianalexanderschmidt.de/) and [Sebastian Schmieg](https://sebastianschmieg.com/) with design students from the [HTW Dresden](https://www.htw-dresden.de/).
 
